@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.citas-admin {
+    padding: 0 3rem 0 0;
+    .citas {
+        display: grid;
+        gap: 2rem;
+        list-style: none;
+        li {
+            background-color: #363636;
+            padding: 3rem;
+            border-radius: 2rem;
+            span {
+                font-weight: v.$bold;
+                color: v.$azul;
+            }
+        }
+    }
+}
+
+.servicios-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .servicio-admin {
+        display: flex;
+        width: 90%;
+        height: 10rem;
+        border: 0.5rem solid v.$azul;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 2rem;
+        }
+        .botones-admin {
+            display: flex;
+            font-size: 4rem;
+            .ico-actualizar {
+                color: v.$verde;
+            }
+            .ico-eliminar {
+                color: v.$rojo;
+            }
+        }
+    }
+}

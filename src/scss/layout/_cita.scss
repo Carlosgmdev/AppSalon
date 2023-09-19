@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.seccion {
+
+    padding: 5rem 0;
+    display: none;
+
+    .text-center {
+        text-align: center;
+    }
+
+}
+
+.mostrar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-size: 2rem;
+        font-style: italic;
+    }
+    a {
+        ion-icon {
+            font-size: 6rem;
+            color: v.$blanco;
+        }
+    }
+}
+
